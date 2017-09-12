@@ -28,19 +28,15 @@ Both the methods worked fine but the second method ,the one that used weights wa
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
+![Original Image]
+<img src="test_images/solidYellowCurve.jpg" width="480" alt="Combined Image" />
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Shortcomings with the current pipeline.
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+One of the possible shortcoming of this pipeline is that the transitions won't be smoother on the road with more curvy lanes.Also ,the current pipleine can be made more smoother on videos,though it is giving nice results on the images already.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A poosible improvement to the current pipline would be to use the rich data of the previous slopes to induce a smoothing effect.That is,to determine the slope for a particular frame,the slopes of the previous two frames should be taken into account to prevent much deviations.This will work good on curvy roads as well.
